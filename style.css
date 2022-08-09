@@ -1,0 +1,26 @@
+.generate {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+input {
+  width: 70px;
+}
+.sapn {
+  background-color: yellow;
+}
+
+.you {
+  font-weight: 700;
+}
+.hidden {
+  display: none;
+}
+#win {
+  background-color: green;
+  color: white;
+}
+#lost {
+  background-color: red;
+  color: white;
+}

@@ -4,24 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Document</title>
   </head>
+
   <body>
     <nav>
-      <p id="weather">
+      <div id="weather">
         <span></span>
         <span></span>
-      </p>
+      </div>
       <p id="location"></p>
     </nav>
+
     <main>
       <h1 id="clock">00:00:00</h1>
-      <h2 id="today">2022.12.31</h2>
-      <form action="">
-        <input type="text" placeholder="Write To do" required />
-      </form>
-    </main>
+      <p id="today">2022.12.31</p>
+      <p id="greeting" class="hidden"></p>
 
+      <form id="login_form" class="hidden">
+        <input
+          type="text"
+          placeholder="what is your name"
+          maxlength="15"
+          required
+        />
+        <input type="submit" value="login" />
+      </form>
+
+      <div id="logged_in">
+        <form action="">
+          <input type="text" placeholder="Write To do" required />
+        </form>
+      </div>
+    </main>
+    <script src="src/greeting.js"></script>
     <script src="src/todo.js"></script>
     <script src="src/time.js"></script>
     <script src="src/weather.js"></script>
